@@ -2,3 +2,5 @@
 /Logs
 /Packages
 .vsconfig
+/Temp
+/.vs
