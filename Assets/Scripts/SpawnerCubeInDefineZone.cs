@@ -8,9 +8,10 @@ public class SpawnerCubeInDefineZone : Spawner<SpawnedCube>
 
     public override void Spawn(SpawnedCube @object)
     {
+        int valueDivision = 2;
         float offsetFromBorder = 2.0f;
-        float halfWidthPlatform = _platform.transform.localScale.x / 2;
-        float halfHeigthPlatform = _platform.transform.localScale.z / 2;
+        float halfWidthPlatform = _platform.transform.localScale.x / valueDivision;
+        float halfHeigthPlatform = _platform.transform.localScale.z / valueDivision;
 
         float leftBorderPlatform = -halfWidthPlatform + offsetFromBorder + transform.position.x;
         float rightBorderPlatform = halfWidthPlatform - offsetFromBorder + transform.position.x;

@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
-    [SerializeField] private Material _materialForChange;
+    [SerializeField] private Color _colorForChange;
 
     public void ChangeColor(Material material)
     {
-        material.color = _materialForChange.color;
+        material.color = _colorForChange;
     }
 }
